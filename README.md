@@ -156,12 +156,3 @@ This is a static site — deploy it anywhere that serves static files:
 
 ---
 
-## 📄 License
-
-This project is open source and available for personal use and learning.
-
----
-
-<p align="center">
-  Built with 💙 by <strong>Srishti Raj</strong>
-</p>
