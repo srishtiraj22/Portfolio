@@ -109,7 +109,7 @@ npm install
 npm run dev
 ```
 
-The app will be available at **`http://localhost:5173`** by default.
+The app will be available at **`http://localhost:XXXX`** by default.
 
 ### Available Scripts
 
@@ -136,10 +136,6 @@ The app will be available at **`http://localhost:5173`** by default.
 | Profile photo | Replace `public/profile.png` |
 | Resume | Replace `public/resume.pdf` |
 | SEO metadata | `index.html` — update `<title>`, `<meta>`, and OG tags |
-
-### Theme & Design Tokens
-
-All colours, spacing, and typography are managed via CSS custom properties in `src/index.css`. Edit the `:root` and `[data-theme="dark"]` / `[data-theme="light"]` blocks to adjust the design system globally.
 
 ---
 
