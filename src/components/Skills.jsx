@@ -43,6 +43,17 @@ const skillCategories = [
     ],
   },
   {
+    title: 'Generative AI / Agentic AI',
+    icon: '🧬',
+    skills: [
+      { name: 'LangChain', level: 82 },
+      { name: 'LangGraph', level: 78 },
+      { name: 'Prompt Engineering', level: 85 },
+      { name: 'LLM Integration', level: 80 },
+      { name: 'RAG', level: 78 },
+    ],
+  },
+  {
     title: 'Tools & Platforms',
     icon: '🛠️',
     skills: [
