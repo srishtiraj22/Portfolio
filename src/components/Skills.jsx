@@ -5,73 +5,32 @@ const skillCategories = [
   {
     title: 'Languages',
     icon: '💻',
-    skills: [
-      { name: 'TypeScript', level: 85 },
-      { name: 'JavaScript', level: 90 },
-      { name: 'HTML', level: 95 },
-      { name: 'CSS', level: 90 },
-    ],
+    skills: ['C++', 'C', 'Java'],
+  },
+  {
+    title: 'Core CS',
+    icon: '🧠',
+    skills: ['Data Structures', 'Algorithms', 'DBMS', 'Operating System', 'Computer Networks'],
   },
   {
     title: 'Frontend',
     icon: '🎨',
-    skills: [
-      { name: 'React', level: 88 },
-      { name: 'React Native', level: 82 },
-      { name: 'Tailwind CSS', level: 85 },
-      { name: 'Vite', level: 80 },
-    ],
+    skills: ['HTML', 'CSS', 'JavaScript', 'React / Next.js'],
   },
   {
-    title: 'Backend & Cloud',
+    title: 'Backend',
     icon: '☁️',
-    skills: [
-      { name: 'Firebase', level: 85 },
-      { name: 'Firestore', level: 80 },
-      { name: 'Firebase Auth', level: 82 },
-      { name: 'REST APIs', level: 78 },
-    ],
-  },
-  {
-    title: 'AI & APIs',
-    icon: '🤖',
-    skills: [
-      { name: 'Google Gemini API', level: 80 },
-      { name: 'YouTube Data API', level: 75 },
-      { name: 'NLP Concepts', level: 70 },
-      { name: 'Prompt Engineering', level: 78 },
-    ],
+    skills: ['Firebase', 'Firestore', 'REST API'],
   },
   {
     title: 'Generative AI / Agentic AI',
-    icon: '🧬',
-    skills: [
-      { name: 'LangChain', level: 82 },
-      { name: 'LangGraph', level: 78 },
-      { name: 'Prompt Engineering', level: 85 },
-      { name: 'LLM Integration', level: 80 },
-      { name: 'RAG', level: 78 },
-    ],
+    icon: '🤖',
+    skills: ['LangChain', 'LangGraph', 'LLM Integration', 'RAG'],
   },
   {
-    title: 'Tools & Platforms',
+    title: 'Tools',
     icon: '🛠️',
-    skills: [
-      { name: 'Git & GitHub', level: 88 },
-      { name: 'Expo', level: 82 },
-      { name: 'VS Code', level: 95 },
-      { name: 'Figma', level: 70 },
-    ],
-  },
-  {
-    title: 'Concepts',
-    icon: '🧠',
-    skills: [
-      { name: 'Responsive Design', level: 90 },
-      { name: 'State Management', level: 85 },
-      { name: 'Component Architecture', level: 85 },
-      { name: 'Cybersecurity', level: 72 },
-    ],
+    skills: ['Git', 'GitHub', 'Expo', 'VS Code'],
   },
 ]
 
@@ -112,20 +71,11 @@ export default function Skills() {
                 <span className="skills__category-icon">{cat.icon}</span>
                 <h3 className="skills__category-title">{cat.title}</h3>
               </div>
-              <div className="skills__list">
+              <div className="skills__tags">
                 {cat.skills.map((skill) => (
-                  <div className="skills__item" key={skill.name}>
-                    <div className="skills__item-info">
-                      <span className="skills__item-name">{skill.name}</span>
-                      <span className="skills__item-level">{skill.level}%</span>
-                    </div>
-                    <div className="skills__bar">
-                      <div
-                        className="skills__bar-fill"
-                        style={{ '--fill-width': `${skill.level}%` }}
-                      />
-                    </div>
-                  </div>
+                  <span className="skills__tag" key={skill}>
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
